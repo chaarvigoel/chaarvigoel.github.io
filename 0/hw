@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 0 — Perspective, Focal Length, and COP</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; color: #222; }
+    header { background: #003366; color: #fff; padding: 16px; }
+    header a { color: #fff; text-decoration: none; font-weight: bold; }
+    main { max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1 { margin: 0 0 8px; }
+    h2 { margin-top: 28px; }
+    p { max-width: 70ch; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    @media (max-width: 680px) { .grid-2 { grid-template-columns: 1fr; } }
+    figure { margin: 0; border: 1px solid #ddd; padding: 8px; background: #fafafa; }
+    figcaption { font-size: 14px; color: #555; margin-top: 6px; }
+    img, video { width: 100%; height: auto; display: block; }
+    .back { margin-top: 24px; }
+    .meta { font-size: 14px; color: #555; }
+    .note { font-size: 14px; background: #f3f7ff; border: 1px solid #d6e3ff; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+      <a href="../index.html">← Back to Portfolio</a>
+      <strong>CS180/280A — Project 0</strong>
+    </div>
+  </header>
+
+  <main>
+    <h1>Project 0 — Overview</h1>
+    <p class="meta">Goal: Build intuition for how distance to subject and focal length affect perspective and the center of projection.</p>
+
+    <h2>Part 1 — Selfie: Wrong vs Right</h2>
+    <div class="grid-2">
+      <figure>
+        <img src="./media/part1_close.jpg" alt="Close selfie—wide angle distortion" />
+        <figcaption>Close-up (wide angle) — noticeable distortion.</figcaption>
+      </figure>
+      <figure>
+        <img src="./media/part1_zoom.jpg" alt="Stepped back and zoomed—more natural proportions" />
+        <figcaption>Step back + zoom — proportions look more natural.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Part 2 — Architectural Perspective Compression</h2>
+    <div class="grid-2">
+      <figure>
+        <img src="./media/part2_zoom.jpg" alt="Zoomed street view—compressed perspective" />
+        <figcaption>Zoomed from far away — scene appears flattened/compressed.</figcaption>
+      </figure>
+      <figure>
+        <img src="./media/part2_wide.jpg" alt="Closer wide view—exaggerated depth" />
+        <figcaption>Closer, no zoom — stronger sense of depth.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Part 3 — Dolly Zoom (Animated)</h2>
+    <figure>
+      <img src="./media/part3_dolly.gif" alt="Dolly zoom animated GIF" />
+      <figcaption>Combined stills into an animated GIF to reproduce the classic dolly‑zoom effect.</figcaption>
+    </figure>
+
+    <p class="note">
+      Tip: If your GIF is very large, you can export an <code>.mp4</code> and use a <code>&lt;video&gt;</code> tag instead (smaller, loads faster):
+    </p>
+<pre style="background:#f6f8fa;border:1px solid #e1e4e8;padding:8px;overflow:auto;">
+&lt;video src="./media/part3_dolly.mp4" autoplay loop muted playsinline&gt;&lt;/video&gt;
+</pre>
+
+    <div class="back">
+      <a href="../index.html">← Back to Portfolio</a>
+    </div>
+  </main>
+</body>
+</html>
