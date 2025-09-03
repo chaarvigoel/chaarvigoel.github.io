@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 0 — Perspective</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    header { background: #003366; color: white; padding: 16px; }
+    header a { color: #fff; text-decoration: none; font-weight: bold; }
+    main { max-width: 900px; margin: auto; padding: 20px; }
+    h1, h2 { margin-top: 24px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } }
+    figure { margin: 0; }
+    figcaption { font-size: 14px; color: #555; margin-top: 6px; }
+    img { width: 100%; border: 1px solid #ccc; }
+    .back { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← Back to Portfolio</a>
+  </header>
+
+  <main>
+    <h1>Project 0 — Perspective and Focal Length</h1>
+    <p>In this project, I explored how perspective, focal length, and distance affect images.</p>
+
+    <h2>Part 1: Selfie — Wrong vs Right</h2>
+    <div class="grid-2">
+      <figure>
+        <img src="./media/part1_close.jpg" alt="Close selfie" />
+        <figcaption>Close-up (distorted)</figcaption>
+      </figure>
+      <figure>
+        <img src="./media/part1_zoom.jpg" alt="Zoom selfie" />
+        <figcaption>Step back + zoom (better proportions)</figcaption>
+      </figure>
+    </div>
+
+    <h2>Part 2: Architectural Perspective</h2>
+    <div class="grid-2">
+      <figure>
+        <img src="./media/part2_zoom.jpg" alt="Zoom street" />
+        <figcaption>Zoomed — compressed perspective</figcaption>
+      </figure>
+      <figure>
+        <img src="./media/part2_wide.jpg" alt="Wide street" />
+        <figcaption>Wide — exaggerated depth</figcaption>
+      </figure>
+    </div>
+
+    <h2>Part 3: Dolly Zoom</h2>
+    <figure>
+      <img src="./media/part3_dolly.gif" alt="Dolly zoom GIF" />
+      <figcaption>Dolly zoom effect (animated GIF).</figcaption>
+    </figure>
+
+    <div class="back">
+      <a href="../index.html">← Back to Portfolio</a>
+    </div>
+  </main>
+</body>
+</html>
